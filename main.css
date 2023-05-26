@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  font-family: "Source Sans Pro";
+  overflow-x: hidden;
+}
+.big-image {
+  height: 65vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url(Images/dogs\ playing\ in\ field.jpg);
+}
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.452);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.overlay h1 {
+  font-size: 80px;
+  letter-spacing: 0px;
+  margin: 0 0 5px;
+  text-align: center;
+}
+.overlay p {
+  margin: 0;
+  font-size: 28px;
+  text-align: center;
+}
+.why {
+  font-family: "source sans pro";
+  font-weight: bolder;
+  color: #2d3449;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.box-1-h2 {
+  color: #2d3449;
+}
+.box-1-p {
+  color: #2d3449;
+}
+.carousel-inner {
+  height: 50vh;
+  width: 100vw;
+}
+.box-2-p {
+  color: #2d3449;
+  text-align: center;
+}
+.box-2-author {
+  color: #2d3449;
+  font-weight: bold;
+  text-align: center;
+}
+.box-3-h2 {
+  color: #2d3449;
+  text-align: center;
+}
+.box-3-p {
+  color: #2d3449;
+  text-align: center;
+}
+.box-3-a {
+  color:#2d3449;
+  align-content: center;
+}
+.footer-p { 
+  color: grey;
+  text-align: center;
+}
+.footer-a {
+  color: grey;
+}
+.footer-text {
+  color: grey;
+  text-align: center;
+}
+.landing-page-image {
+  height: 30vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: #536289;
+}
+.service-details {
+  font-weight: lighter;
+}
+.rates-section {
+  text-align: center;
+}
+.section-header {
+  color: #2d3449;
+  text-align: center;
+  font-weight: bolder;
+}
+.section-details {
+  color: #2d3449;
+  text-align: center;
+}
+.questions-header {
+  font-family: "source sans pro";
+  color: #2d3449;
+  text-align: center;
+}
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.tabs {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+.tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+.tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: #404b69;
+  font-family: "source sans pro";
+  font-weight: bold;
+  cursor: pointer;
+}
+.tab-label:hover {
+  background-color: #2d3449;
+}
+.tab-label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.35s;
+}
+.tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: #2d3449;
+  font-family: "source sans pro";
+  background-color: white;
+  transition: all 0.35s;
+}
+.tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  font-family: "source sans pro";
+  background-color: #404b69;
+  cursor: pointer;
+}
+.tab-close:hover {
+  background-color: #2d3449;
+}
+input:checked + .tab-label {
+  background-color: #2d3449;
+}
+input:checked + .tab-label::after {
+  transform: rotate(90deg);
+}
+input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+}
